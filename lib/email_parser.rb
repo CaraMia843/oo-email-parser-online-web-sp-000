@@ -13,7 +13,6 @@ class EmailAddressParser
     puts emailsplit = emails.split.collect do |add|
       add.split(",")
     end
-    array = emailsplit.uniq 
-    array
+    .flatten.uniq
   end
 end
